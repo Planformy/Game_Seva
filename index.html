@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Игра на внимательность</title>
+</head>
+<body>
+	<div class="side-image left"></div>
+    <div class="side-image right"></div>
+	<main>
+	<h1>Игра в Цвета</h1>
+		<input onchange="generateTable()" placeholder="Введите кол-во строк" type="text" class="input_int" id="input_row">
+		<input onchange="generateTable()" placeholder="Введите кол-во колонн < 8" type="text" class="input_int" id="input_colum">
+		<input Type="button" class="button_generate" id="button_generate" value="Генерация">
+		<input onclick="clearTable()" Type="button" class="button_clear" id="button_clear" value="Очистка">
+		<h2>Как играть?</h2>
+		<p>Сгенерируйте кол-во строк и столбцов. На экране появятся слова с названием цветов, но при этом сам цвет будет другим.<br> Ваша задача вслух называть цвет, который будет нанесён на слове.</p>
+			<table id="table" class="table"></table>
+	</main>
+</body>
+<script src="CodeGame.js" defer></script>
+</html>
